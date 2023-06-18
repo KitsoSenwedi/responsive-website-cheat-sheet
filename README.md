@@ -39,3 +39,25 @@ The CSS hsl function accepts 3 values: a number from 0 to 360 for hue, a percent
 If you imagine a color wheel, the hue red is at 0 degrees, green is at 120 degrees, and blue is at 240 degrees.
 Saturation is the intensity of a color from 0%, or gray, to 100% for pure color. You must add the percent sign % to the saturation and lightness values.
 Lightness is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral.
+
+Opacity describes how opaque, or non-transparent, something is. For example, a solid wall is opaque, and no light can pass through. But a drinking glass is much more transparent, and you can see through the glass to the other side.
+With the CSS opacity property, you can control how opaque or transparent an element is. With the value 0, or 0%, the element will be completely transparent, and at 1.0, or 100%, the element will be completely opaque like it is by default.
+Another way to set the opacity for an element is with the alpha channel. Similar to the opacity property, the alpha channel controls how transparent or opaque a color is.
+You've already set sleeve's opacity with a named color and the opacity property, but you can add an alpha channel to the other CSS color properties.
+You're already familiar with using the rgb function to set colors. To add an alpha channel to an rgb color, use the rgba function instead.
+The rgba function works just like the rgb function, but takes one more number from 0 to 1.0 for the alpha channel:
+rgba(redValue, greenValue, blueValue, alphaValue);
+You can also use an alpha channel with hsl and hex colors.
+
+The box-shadow property lets you apply one or more shadows around an element. Here is basic syntax:
+box-shadow: offsetX offsetY color;
+Here's how the offsetX and offsetY values work:
+both offsetX and offsetY accept number values in px and other CSS units
+a positive offsetX value moves the shadow right and a negative value moves it left
+a positive offsetY value moves the shadow down and a negative value moves it up
+if you want a value of zero (0) for any or both offsetX and offsetY, you don't need to add a unit. Every browser understands that zero means no change.
+The height and width of the shadow is determined by the height and width of the element it's applied to. You can also use an optional spreadRadius value to spread out the reach of the shadow. More on that later.
+
+Notice that the edges of the shadow are sharp. This is because there is an optional blurRadius value for the box-shadow property:
+box-shadow: offsetX offsetY blurRadius color;
+If a blurRadius value isn't included, it defaults to 0 and produces sharp edges. The higher the value of blurRadius, the greater the blurring effect is.
