@@ -65,3 +65,5 @@ If a blurRadius value isn't included, it defaults to 0 and produces sharp edges.
 The vh unit stands for viewport height, and is relative to 1% of the height of the viewport.
 The rem unit stands for root em, and is relative to the font size of the html element.
 As label elements are inline by default, they are all displayed side by side on the same line, making their text hard to read. To make them appear on separate lines, add display: block to the label element, and add a margin of 0.5rem 0, to separate them from each other.
+
+Adding a dropdown to the form is easy with the select element. The select element is a container for a group of option elements, and the option element acts as a label for each dropdown option. Both elements require closing tags.
