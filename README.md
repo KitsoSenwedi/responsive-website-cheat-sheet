@@ -61,3 +61,7 @@ The height and width of the shadow is determined by the height and width of the 
 Notice that the edges of the shadow are sharp. This is because there is an optional blurRadius value for the box-shadow property:
 box-shadow: offsetX offsetY blurRadius color;
 If a blurRadius value isn't included, it defaults to 0 and produces sharp edges. The higher the value of blurRadius, the greater the blurring effect is.
+
+The vh unit stands for viewport height, and is relative to 1% of the height of the viewport.
+The rem unit stands for root em, and is relative to the font size of the html element.
+As label elements are inline by default, they are all displayed side by side on the same line, making their text hard to read. To make them appear on separate lines, add display: block to the label element, and add a margin of 0.5rem 0, to separate them from each other.
